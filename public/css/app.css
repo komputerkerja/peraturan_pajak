@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+:root{
+    --dark-color: #141313;
+    --dark-min-color: #2a2a2a;
+    --primary-color: #3033ee;
+    --pinky-color: #f55670;
+}
+.notfound{
+    font-size: 20px;
+    margin: 20px 0;
+    background-color: var(--pinky-color);
+    color: white;
+    padding: 20px;
+}
+.form-group{
+    display: flex;
+}
+.input-search{
+    font-size: 16px;
+    border: none;
+    text-indent: 10px;
+}
+.btn-search{
+   padding: 0 10px; 
+   transform: rotate(180deg);
+   border: none;
+   background-color: #f55670;
+   color: white;
+   font-size: 20px;  
+}
+.btn-search:hover{
+    background-color: #fb879a;
+}
+.btn{
+    padding: 5px 20px;
+    border: none;
+    font-size: 15px;
+    text-decoration: none;
+}
+.btn-primary{
+    color: white;
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+}
+
+footer p{
+    color:  white;
+}
+
+nav .nav{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.container{
+    width: 80%;
+}
+
+.peraturan-terbaru{
+    margin-bottom: 20px;
+}
+
+.peraturan-terbaru .image-box{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+.peraturan-terbaru .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.peraturan-terbaru .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.peraturan-terbaru .title a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.peraturan-terbaru .desc{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--dark-min-color);
+}
+
+.peraturan-terbaru .detail{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.content-peraturan{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.content-peraturan .card{
+    min-width: 300px;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 2px 0px 8px #2e272721;
+}
+
+.content-peraturan .card .peraturan{
+    width: 90%;
+    margin: 20px;
+}
+
+.content-peraturan .card .peraturan .title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.content-peraturan .card .peraturan .desc{
+    font-size: 18px;
+    margin: 10px 0;
+    /* line-height: 1.6rem; */
+}
+
+.content-peraturan .card .peraturan .detail{
+    margin: 10px 0;
+}
+
+.document-spawn{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(53, 50, 50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.document-spawn .warp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(163, 162, 162);
+}
+.document-spawn .warp .content{
+    width: 90%;
+    height: 95vh;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 20px 20px 40px 10px;
+}
+
+.close{
+    background-color: red;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .content-peraturan .card{
+        max-width: none;
+        min-width: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 550px){
+    .document-spawn .content{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        height: 140px;
+        
+    }
+    nav .nav{
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;     
+    }
+    nav .nav h1{
+        margin-bottom: 10px;
+    }
+    nav .nav div{
+        margin-top: 5px;
+    }   
+    .content-peraturan{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .content-peraturan .card{
+        width: 100%;
+        min-width: auto;
+        max-width: auto;
+    } 
+    .content-peraturan .card .peraturan{
+        width: 100%;
+        margin: 20px;
+    }
+    .form-group{
+        width: 100%;
+        justify-content: center;
+    }
+    .input-search{
+        width: 80%;
+    }
+    .btn-search{
+       padding: 0 10px; 
+       transform: rotate(180deg);
+       border: none;
+       background-color: #f55670;
+       color: white;
+       font-size: 20px;  
+    }
+}

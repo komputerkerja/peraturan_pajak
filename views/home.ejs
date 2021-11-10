@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peraturan Pajak</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body onload="getListPeraturanPajak()">
+    
+    <nav>
+        <div class="nav">
+            <h1>Peraturan Pajak</h1>
+            <div class="form-group">
+                <input type="text" class="input-search">
+                <button class="btn-search"><span>&#9740;</span></button>
+            </div>            
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="peraturan-terbaru">
+            <div class="image-box">
+                <img src="./img/gambar.jpg" alt="picture">
+            </div>
+            <p class="title">
+                <a id="headurl" href="#">PMK/320/09DFD</a>
+            </p>
+            <div class="desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste autem corporis ducimus non praesentium consequuntur aut, labore, doloribus voluptatem mollitia beatae quasi repudiandae tempora, voluptatibus necessitatibus fugit nesciunt a ratione.
+            </div>
+            <div class="detail">
+                <small>
+                    <span>Staus : </span>
+                    <span class="status">Status: Aktif | </span>
+                    <span> | </span>
+                    <span>Dokumen : </span>
+                    <span class="dokumen">Diterbitkan Oleh Kementrian Keuangan | </span>
+                    <span> | </span>
+                    <span>Terbit : </span>
+                    <span class="tanggal">Detail</span>
+                </small>
+            </div>
+        </div>
+
+        <div class="content-peraturan"></div>
+
+    </div>
+
+    <footer>
+        <p>ronallatupeirissa@gmail.com</p>
+    </footer>
+
+    <div class="hidden document-spawn">
+        <div class="warp">
+            <div class="content">
+
+            </div>
+        </div>
+        <div class="close" id="close">x</div>
+    </div>
+
+
+<script src="js/Peraturan.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
